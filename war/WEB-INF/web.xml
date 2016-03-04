@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	<servlet>
+		<servlet-name>Custom_test</servlet-name>
+		<servlet-class>customTest.Custom_testServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Custom_test</servlet-name>
+		<url-pattern>/custom_test</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>createTest</servlet-name>
+		<servlet-class>customTest.createTestServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>createTest</servlet-name>
+		<url-pattern>/createTest</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>createQuestion</servlet-name>
+		<servlet-class>customTest.createQuestionServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>createQuestion</servlet-name>
+		<url-pattern>/createQuestion</url-pattern>
+	</servlet-mapping>
+	<servlet>
+     <servlet-name>create-jsp</servlet-name>
+     <jsp-file>/jsp/create.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+     <servlet-name>create-jsp</servlet-name>
+     <url-pattern>/create.jsp</url-pattern>
+    </servlet-mapping>
+	<servlet>
+     <servlet-name>assign-jsp</servlet-name>
+     <jsp-file>/jsp/assign.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+     <servlet-name>assign-jsp</servlet-name>
+     <url-pattern>/assign.jsp</url-pattern>
+    </servlet-mapping>
+    <servlet>
+     <servlet-name>preview-jsp</servlet-name>
+     <jsp-file>/jsp/preview.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+     <servlet-name>preview-jsp</servlet-name>
+     <url-pattern>/preview.jsp</url-pattern>
+    </servlet-mapping> 
+	<welcome-file-list>
+		<welcome-file>Index.html</welcome-file>
+	</welcome-file-list>
+</web-app>

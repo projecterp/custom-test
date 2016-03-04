@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="css/create.css">
+</head>
+<script>
+function valid()
+{
+    var textVal=document.getElementById("test_name").value;
+    if (textVal=='') 
+    {
+        alert("Field is blank");
+    } 
+    else 
+    {
+        document.forms["form"].submit();
+    }
+ }
+</script>
+<body bgcolor="lightgrey">
+  <form id="form" action="createTest" method="get">
+  <div class="box">
+     <p class="p">Test Name:</p>
+     <input type="text" class="feed" id="test_name" name="test_name" style="width:250px;height:25px;">
+     <input type="button" name="btn" class="btn" value="Start Adding Questions" onClick="valid()">
+  </div>
+  </form>
+</body>
+</html>
